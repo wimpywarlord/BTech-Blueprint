@@ -1,29 +1,32 @@
-# V innovate IT 👽
-![Forks](https://img.shields.io/github/forks/vinnovateit/Ventor?logo=github&style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/vinnovateit/Ventor?label=STARS%20%F0%9F%92%A5&logo=github&style=for-the-badge)
-![Twitter](https://img.shields.io/twitter/follow/v_innovate_it?logo=twitter&style=for-the-badge)
+# Kshitij Dhyani  
 
-**We are here to change the game.🐙** 
+![My Banner](/banner.png)
 
-## Ventor 🐕
+# Wimpy Warlord 👽
+![Follow Github](https://img.shields.io/github/followers/wimpywarlord?color=%2317202A&label=Follow%20wimpywarlord&logo=github&style=for-the-badge) ![Follow Twitter](https://img.shields.io/twitter/follow/kshitij_dhyani?color=%2317202A&label=Follow%20kshitij_dhyani&logo=twitter&style=for-the-badge) ![GitHub stars](https://img.shields.io/github/stars/wimpywarlord/Github_readme_template?color=%2317202A&label=STARS%20%F0%9F%8C%9F&logo=github&style=for-the-badge) 
 
-👋  Confused about which subject to take next semester? Well not anymore, get delicately analysed semester-wise timeline and live life hassle free. ✌️
+**I pump iron during the day and smash my keyboard in the night.🐙** 
 
-The going has got insanely tough and one confusion has led to the other.We are probably in the midst of the messiest course registration season ever. With a blurry strategy and only a faint idea of what to choose, dont sweat it! Let us do it for you.
+## Ventor - The Btech Blue Print 🐕
 
-Head over to VIT Mentor, hosting the largest pool of resources, expert opinions from seniors and much more, catering to every branch and year of students.
+🚫 𝐓𝐢𝐫𝐞𝐝 𝐨𝐟 𝐭𝐡𝐞 𝐅𝐅𝐂𝐒 ( Fully Flexible credit system ) 𝐛𝐢𝐝𝐝𝐢𝐧𝐠 𝐰𝐚𝐫 ?
+
+📐 We welcome you with open arms at 𝐯𝐞𝐧𝐭𝐨𝐫 , get a tangible blueprint for all your 4 years at VIT and fly through your 𝐅𝐅𝐂𝐒 phase like a PRO. Get the best list of courses suggested by the hundreds of seniors.
+
+The tried and tested way to nail your FFCS.
+
+![My Banner](/website.png)
+
+**Link to the website** : https://sembuddy.herokuapp.com/
 
 ## Getting Started 🎧
 
-This project utilized the benefits of multiple technologies such as node , js, html ,css , ejs , nodemailer etc.
-
+This project utilized the benefits of multiple technologies such as javascript , HTML5 , css , scss.
 Its better if we familiarize ourselves with these technologies. 
-
 ### Prerequisites
 [![Stay Motivated](https://img.shields.io/badge/Stay-Motivated-teal.svg?style=for-the-badge)](https://www.instagram.com/kshitij_dhyani/) [![Think Big](https://img.shields.io/badge/Think-Big-orange.svg?style=for-the-badge)](https://www.linkedin.com/in/kshitijdhyani/) [![Work Hard](https://img.shields.io/badge/Work-Hard-blue.svg?style=for-the-badge)](https://github.com/wimpywarlord)
-We expect you to download and install node.js! 
 
-The editor and package manager are all at your discretion. 
+There no necessity for any software for running the project ! The editor and package manager are all at your discretion. 
 
 ## Installing☔
 
@@ -34,23 +37,16 @@ Its pretty straightforward :
 git clone <repository Url>
 ```
 
-**Install all dependencies** 
-```
-npm install
-```
-
 ## Deployment 💡
 [![THINK](https://img.shields.io/badge/Stay-Motivated-teal.svg?style=for-the-badge)](https://github.com/wimpywarlord/Mess_It_Up) [![MAKE](https://img.shields.io/badge/Think-Big-orange.svg?style=for-the-badge)](https://www.linkedin.com/in/kshitijdhyani/) [![SELL](https://img.shields.io/badge/Work-Hard-blue.svg?style=for-the-badge)](https://github.com/wimpywarlord)
 
 **Run the application** 
 ```
-npm run dev
+Use live server extention in vscode.
 ```
 
 ## Built With 🎯
 **A lot of love and a little JavaScript**
-
-* [Node.js](https://nodejs.org/en/) - The web framework used
 
 ## Contributing 
 
@@ -58,16 +54,19 @@ Make Pull requests which improve the functionality of the application in any sor
 * Clear , short , crisp description of the PR. 
 * Should add on to the value of the application.
 
-## I'm a social animal!
+## Become my distraction (Social Media)🏅
+I am From **New Delhi**<img align="center" src="https://image.flaticon.com/icons/svg/2924/2924814.svg" alt="drawing" width="5%"/>
 
-So connect with me and share your experience.
 
-<a href="https://www.facebook.com/VinnovateIT/" target="_blank"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg" /></a> &nbsp;&nbsp;<a href="https://www.linkedin.com/company/v-innovate-it" target="_blank"><img height="32" width="32" src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/logo-linkedin.svg" /></a> &nbsp;&nbsp;<a href="https://www.instagram.com/vinnovateit/" target="_blank"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" /></a>
+|                                                                                     <a href="https://github.com/wimpywarlord"><img src="https://i.ibb.co/JCdtj0v/Whats-App-Image-2020-05-18-at-9-41-11-PM.jpg" width=170px height=165px /></a>                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                                                                                        **[Kshitij Dhyani](https://avatars0.githubusercontent.com/u/41532804?s=460&u=b5b9022dc4dc061a63574b6376a9fc23d3dbf695&v=4)**                                                                                                                                        |
+| <a href="https://twitter.com/kshitij_dhyani"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/twitter.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/kshitij.dhyani.3"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/facebook.png" width="32px" height="32px"></a> <a href="www.linkedin.com/in/kshitijdhyani/"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/linkedin.png" width="32px" height="32px"></a> |## License
 
-MIT © [VinnovateIT](https://www.instagram.com/vinnovateit/)
+MIT © [Kshitij Dhyani](https://github.com/wimpywarlord)
 
 ## Acknowledgments 💖
 
-* To our VinnovateIT family👪  and friends 👫 who always keep me motivated.
+* To my family👪  and friends 👫 who always kept me motivated.
 * To the community of computer science 💻.
 
