@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167856909-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167856909-2');
+  </script>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="A perfect reference timeline for your journey in VIT.">
+  <meta name="keywords" content="VIT, VIT Vellore , vit college , kshitij , vinnovateit , wimpywarlord">
+  <meta name="author" content="VinnovateIT">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="<%=title_logo%>" type="image/x-icon">
+  <meta property="og:title" content="Ventor" />
+  <meta property="og:description" content="A perfect reference timeline for your journey in VIT." />
+  <meta property="og:image" content="<%=title_logo%>" />
+  <title>Ventor</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .modal {
+      color: black;
+    }
+
+    body {
+      background-color: #17202A;
+      color: #FBFCFC;
+    }
+
+    body {
+            background-color: #17202A;
+            color: #FBFCFC;
+            transition: background-color 1s ease;
+        }
+
+        /* colours */
+        .color-shade1 {
+        background-color: #19222b;
+        }
+        .color-shade2 {
+        background-color: #1c2936;
+        }
+        .color-shade3 {
+        background-color: #1d2c3b;
+        }
+        .color-shade4 {
+        background-color: #1e3042;
+        }
+        .color-shade5 {
+        background-color: #1a3147;
+        }
+        .color-shade6 {
+        background-color: #17314a;
+        }
+        .color-shade7 {
+        background-color: #132f4a;
+        }
+
+    .center_col {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .center_row {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .timeline {
+      list-style: none;
+      padding: 20px 0 20px;
+      position: relative;
+    }
+
+    .timeline:before {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      content: " ";
+      width: 3px;
+      background-color: #eeeeee;
+      left: 50%;
+      margin-left: -1.5px;
+    }
+
+    .timeline li {
+      margin-bottom: 20px;
+      position: relative;
+
+    }
+
+    .timeline-panel {
+      transform-origin: top right;
+      transform-style: preserve-3D;
+      transform: rotateY(-90deg);
+      transition: all 2s ease-in-out;
+    }
+
+    .timeline-inverted .timeline-panel {
+      transform-origin: top left;
+      transform-style: preserve-3D;
+      transition: all 2s ease-in-out;
+      transform: rotateY(90deg);
+    }
+    a
+        {
+            text-decoration: none;
+            color:white;
+        }
+        a:hover
+        {
+            text-decoration: none;
+        }
+    .timeline>li:before,
+    .timeline>li:after {
+      content: " ";
+      display: table;
+    }
+
+    .timeline>li:after {
+      clear: both;
+    }
+
+    .timeline>li:before,
+    .timeline>li:after {
+      content: " ";
+      display: table;
+    }
+
+    .timeline>li:after {
+      clear: both;
+    }
+
+    .timeline>li>.timeline-panel {
+      width: 46%;
+      float: left;
+      border: 1px solid #d4d4d4;
+      border-radius: 2px;
+      padding: 20px;
+      position: relative;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    }
+
+    .timeline>li>.timeline-panel:before {
+      position: absolute;
+      top: 26px;
+      right: -15px;
+      display: inline-block;
+      border-top: 15px solid transparent;
+      border-left: 15px solid #ccc;
+      border-right: 0 solid #ccc;
+      border-bottom: 15px solid transparent;
+      content: " ";
+    }
+
+    .timeline>li>.timeline-panel:after {
+      position: absolute;
+      top: 27px;
+      right: -14px;
+      display: inline-block;
+      border-top: 14px solid transparent;
+      border-left: 14px solid #fff;
+      border-right: 0 solid #fff;
+      border-bottom: 14px solid transparent;
+      content: " ";
+    }
+
+    .timeline>li>.timeline-badge {
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      text-align: center;
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      margin-left: -25px;
+      background-color: #999999;
+      z-index: 100;
+      border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+      float: right;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+
+    .timeline-badge.primary {
+      background-color: #2e6da4 !important;
+    }
+
+    .timeline-badge.success {
+      background-color: #3f903f !important;
+    }
+
+    .timeline-badge.warning {
+      background-color: #f0ad4e !important;
+    }
+
+    .timeline-badge.danger {
+      background-color: #d9534f !important;
+    }
+
+    .timeline-badge.info {
+      background-color: #5bc0de !important;
+    }
+
+    .timeline-title {
+      margin-top: 0;
+      color: inherit;
+    }
+
+    .timeline-body>p,
+    .timeline-body>ul {
+      margin-bottom: 0;
+    }
+
+    .timeline-body>p+p {
+      margin-top: 5px;
+    }
+
+    .timeline-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .timeline-list li {
+      padding: 5px;
+      background-color: rgb(40, 43, 46);
+      border-radius: 10px;
+      margin-bottom: 4px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .timeline-list li span:nth-child(1) {
+      margin-right: 10px;
+    }
+
+    .timeline-footer {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+
+    .timeline-footer>button,
+    .dropdown {
+      width: 100%;
+      margin: 5px;
+    }
+
+    .dropdown button {
+      padding: 5px;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 500px) {
+
+      .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #eeeeee;
+        left: 100%;
+        margin-left: -1.5px;
+      }
+
+      .timeline>li>.timeline-panel {
+        width: 96%;
+      }
+
+      .timeline>li>.timeline-badge {
+        left: 100%
+      }
+
+      .timeline-inverted .timeline-panel {
+        transform-origin: top right;
+        transform-style: preserve-3D;
+        transform: rotateY(-90deg);
+        transition: all 2s ease-in-out;
+      }
+
+      .timeline>li.timeline-inverted>.timeline-panel {
+        float: left;
+      }
+
+      .timeline>li.timeline-inverted>.timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        right: -15px;
+      }
+
+      .timeline>li.timeline-inverted>.timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        right: -14px;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      right: 30px;
+      z-index: 99;
+      height: 50px;
+    }
+
+    #myBtn img {
+      height: 100%;
+    }
+
+    .autocomplete {
+      position: relative;
+      display: inline-block;
+    }
+
+    input {
+      border: 1px solid transparent;
+      background-color: #f1f1f1;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    input[type=text] {
+      background-color: #f1f1f1;
+      width: 100%;
+    }
+
+
+    .autocomplete-items {
+      position: absolute;
+      border: 1px solid #d4d4d4;
+      border-bottom: none;
+      border-top: none;
+      z-index: 99;
+      /*position the autocomplete items to be the same width as the container:*/
+      top: 100%;
+      left: 0;
+      right: 0;
+    }
+
+    .autocomplete-items div {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      border-bottom: 1px solid #d4d4d4;
+    }
+
+    /*when hovering an item:*/
+    .autocomplete-items div:hover {
+      background-color: #e9e9e9;
+    }
+
+    /*when navigating through the items using the arrow keys:*/
+    .autocomplete-active {
+      background-color: DodgerBlue !important;
+      color: #ffffff;
+    }
+  </style>
+
+  <script>
+    function showalert() {
+      alert("Your response has been recorded. We are evaluating it!")
+      // swal("Hello world!");
+    }
+  </script>
+
+</head>
+
+<body>
+  <a href="/" style="position: absolute;top: 10px;left: 10px;z-index: 99;"><img
+      src="https://image.flaticon.com/icons/svg/833/833557.svg" alt="" height="50px"></a>
+  <div style="position: absolute;top: 0;" class="main" id="section1">
+  </div>
+  <a id="myBtn" href="#section1"><img src="https://image.flaticon.com/icons/svg/833/833580.svg" alt="Go to top"></a>
+
+  <div class="container" style="text-align: center;">
+    <div class="page-header">
+      <h1 id="timeline" class="m-5">ECE Engineering</h1>
+    </div>
+    <ul class="timeline">
+      <li class="panel timeline-left" data-color="shade1">
+        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Semester 2</h4>
+            <p id="change1"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 37+
+                seniors</small></p>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-list">
+              <% for(var i=0; i< timeline[0].semesters[0].subjects.length; i++){
+                var index = subjects.findIndex(x => x.code === timeline[0].semesters[0].subjects[i] ); %>
+                <a href="/subject/<%= timeline[0].semesters[0].subjects[i] %>"><li>
+                     <span><%= timeline[0].semesters[0].subjects[i] %></span>
+                     <% if(typeof subjects[index] !== 'undefined'){  %>
+                     <span><%= subjects[index].title %></span>
+                     <%  if(subjects[index].rating>0 && subjects[index].upvotes>0) {%>
+                      <span>&nbsp(<i class="fas fa-star"></i> <%= (subjects[index].rating / subjects[index].upvotes).toFixed(1) %>)</span>
+                      <% }} %>
+                </li></a> 
+            <% } %>
+            </ul>
+            <div class="timeline-footer">
+              <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Filter
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                </div>
+              </div> -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs1">
+                suggest
+              </button>
+
+              <!-- Modal -->
+
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="panel timeline-inverted" data-color="shade2">
+        <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Semester 3</h4>
+            <p id="change2"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 45+
+                seniors</small></p>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-list">
+              <% for(var i=0; i< timeline[0].semesters[1].subjects.length; i++){
+                var index = subjects.findIndex(x => x.code === timeline[0].semesters[1].subjects[i] ); %>
+                <a href="/subject/<%= timeline[0].semesters[1].subjects[i] %>"><li>
+                     <span><%= timeline[0].semesters[1].subjects[i] %></span>
+                     <% if(typeof subjects[index] !== 'undefined'){  %>
+                     <span><%= subjects[index].title %></span>
+                     <%  if(subjects[index].rating>0 && subjects[index].upvotes>0) {%>
+                      <span>&nbsp(<i class="fas fa-star"></i> <%= (subjects[index].rating / subjects[index].upvotes).toFixed(1) %>)</span>
+                      <% }} %>
+                </li></a> 
+            <% } %>
+            <div class="timeline-footer">
+              <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Filter
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                </div>
+              </div> -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs2">
+                suggest
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="panel timeline-left" data-color="shade3">
+        <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Semester 4</h4>
+            <p id="change3"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 65+
+                seniors</small></p>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-list">
+              <% for(var i=0; i< timeline[0].semesters[2].subjects.length; i++){
+                var index = subjects.findIndex(x => x.code === timeline[0].semesters[2].subjects[i] ); %>
+                <a href="/subject/<%= timeline[0].semesters[2].subjects[i] %>"><li>
+                     <span><%= timeline[0].semesters[2].subjects[i] %></span>
+                     <% if(typeof subjects[index] !== 'undefined'){  %>
+                     <span><%= subjects[index].title %></span>
+                     <%  if(subjects[index].rating>0 && subjects[index].upvotes>0) {%>
+                      <span>&nbsp(<i class="fas fa-star"></i> <%= (subjects[index].rating / subjects[index].upvotes).toFixed(1) %>)</span>
+                      <% }} %>
+                </li></a> 
+            <% } %>
+            </ul>
+            <div class="timeline-footer">
+              <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Filter
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                </div>
+              </div> -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs3">
+                suggest
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="panel timeline-inverted" data-color="shade4">
+        <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Semester 5</h4>
+            <p id="change4"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 72+
+                seniors</small></p>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-list">
+
+              <% for(var i=0; i< timeline[0].semesters[3].subjects.length; i++){
+                var index = subjects.findIndex(x => x.code === timeline[0].semesters[3].subjects[i] ); %>
+                <a href="/subject/<%= timeline[0].semesters[3].subjects[i] %>"><li>
+                     <span><%= timeline[0].semesters[3].subjects[i] %></span>
+                     <% if(typeof subjects[index] !== 'undefined'){  %>
+                     <span><%= subjects[index].title %></span>
+                     <%  if(subjects[index].rating>0 && subjects[index].upvotes>0) {%>
+                      <span>&nbsp(<i class="fas fa-star"></i> <%= (subjects[index].rating / subjects[index].upvotes).toFixed(1) %>)</span>
+                      <% }} %>
+                </li></a> 
+            <% } %>
+            </ul>
+            <div class="timeline-footer">
+              <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Filter
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                </div>
+              </div> -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs4">
+                suggest
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="panel timeline-left" data-color="shade5">
+        <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Semester 6</h4>
+            <p id="change5"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 24+
+                seniors</small></p>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-list">
+              <% for(var i=0; i< timeline[0].semesters[4].subjects.length; i++){
+                var index = subjects.findIndex(x => x.code === timeline[0].semesters[4].subjects[i] ); %>
+                <a href="/subject/<%= timeline[0].semesters[4].subjects[i] %>"><li>
+                     <span><%= timeline[0].semesters[4].subjects[i] %></span>
+                     <% if(typeof subjects[index] !== 'undefined'){  %>
+                     <span><%= subjects[index].title %></span>
+                     <%  if(subjects[index].rating>0 && subjects[index].upvotes>0) {%>
+                      <span>&nbsp(<i class="fas fa-star"></i> <%= (subjects[index].rating / subjects[index].upvotes).toFixed(1) %>)</span>
+                      <% }} %>
+                </li> </a>
+            <% } %>
+            </ul>
+            <div class="timeline-footer">
+              <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Filter
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                </div>
+              </div> -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs5">
+                suggest
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- //modals -->
+  <div class="modal fade" id="cs1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ECE Semester 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Enter name of the subject you think should be added</h6>
+          <form action="/ecerequest" method="POST">
+            <div class="autocomplete w-100">
+              <input id="autoCourse1" type="text" name="ece-sem2-suggestion" placeholder="course code-course name">
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="cs2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ECE Semester 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Enter name of the subject you think should be added</h6>
+          <form action="/ecerequest" method="POST">
+            <div class="autocomplete w-100">
+              <input id="autoCourse2" type="text" name="ece-sem3-suggestion" placeholder="course code-course name">
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="cs3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ECE Semester 4</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Enter name of the subject you think should be added</h6>
+          <form action="/ecerequest" method="POST">
+            <div class="autocomplete w-100">
+              <input id="autoCourse3" type="text" name="ece-sem4-suggestion" placeholder="course code-course name">
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="cs4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ECE Semester 5</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Enter name of the subject you think should be added</h6>
+          <form action="/ecerequest" method="POST">
+            <div class="autocomplete w-100">
+              <input id="autoCourse4" type="text" name="ece-sem5-suggestion" placeholder="course code-course name">
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="cs5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ECE Semester 6</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Enter name of the subject you think should be added</h6>
+          <form action="/ecerequest" method="POST">
+            <div class="autocomplete w-100">
+              <input id="autoCourse5" type="text" name="ece-sem6-suggestion" placeholder="course code-course name">
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- //modals -->
+    <div>
+      <div class="center_col" style="height: 3rem; color: #FBFCFC;  background-color: black;">
+        Made with 💞 by VinnovateIT.
+      </div>
+    </div>
+</body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script>
+  //For Go to top button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+</script>
+
+<script>
+  var scroll = window.requestAnimationFrame;
+  var left = document.querySelectorAll(".timeline-left .timeline-panel");
+  var right = document.querySelectorAll(".timeline-inverted .timeline-panel");
+  function loop() {
+    left.forEach(function (element) {
+      if (isElementInViewport(element)) {
+        element.style.transform = "rotateY(0deg)";
+      }
+    })
+    right.forEach(function (element) {
+      if (isElementInViewport(element)) {
+        element.style.transform = "rotateY(0deg)";
+      }
+    })
+    scroll(loop);
+  }
+  loop();
+  function isElementInViewport(el) {
+    // special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+      (rect.top <= 0
+        && rect.bottom >= 0)
+      ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+      ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+  }
+
+  // function randomNumber(min, max) {
+  //     return Math.floor(Math.random() * (max - min) + min);
+  //   }
+
+  //   for (let i = 1; i <= 5; i++) {
+  //     $("#change" + i.toString()).text('Suggested by ' + randomNumber(47, 59).toString() + '+ seniors')
+  //   }
+
+  // for autocomplete feature 
+  function autocomplete(inp, arr) {
+    var currentFocus;
+    inp.addEventListener("input", function (e) {
+      var a, b, i, val = this.value;
+      closeAllLists();
+      if (!val) { return false; }
+      currentFocus = -1;
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      this.parentNode.appendChild(a);
+
+
+      for (i = 0; i < arr.length; i++) {
+
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+
+          b = document.createElement("DIV");
+
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
+          b.addEventListener("click", function (e) {
+
+            inp.value = this.getElementsByTagName("input")[0].value;
+
+            closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+    });
+
+    inp.addEventListener("keydown", function (e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+
+        currentFocus++;
+
+        addActive(x);
+      } else if (e.keyCode == 38) {
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+    });
+    function addActive(x) {
+      if (!x) return false;
+
+      removeActive(x);
+      if (currentFocus >= x.length) currentFocus = 0;
+      if (currentFocus < 0) currentFocus = (x.length - 1);
+
+      x[currentFocus].classList.add("autocomplete-active");
+    }
+    function removeActive(x) {
+
+      for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("autocomplete-active");
+      }
+    }
+    function closeAllLists(elmnt) {
+
+      var x = document.getElementsByClassName("autocomplete-items");
+      for (var i = 0; i < x.length; i++) {
+        if (elmnt != x[i] && elmnt != inp) {
+          x[i].parentNode.removeChild(x[i]);
+        }
+      }
+    }
+
+    document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+    });
+  }
+
+  var courses = []
+
+  axios.get('/subjectrequest3')
+    .then(data => {
+      for (let i = 0; i < data.data.length; i++) {
+        courses.push(data.data[i].code + ' ' + data.data[i].title)
+      }
+    })
+    .catch(err => console.log(err));
+
+
+  for (let i = 1; i <= 5; i++) {
+    autocomplete(document.getElementById("autoCourse" + i.toString()), courses);
+  }
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/5ee258969e5f69442290617f/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+<script>
+  $(window).scroll(function() {
+
+// selectors
+var $window = $(window),
+  $body = $('body'),
+  $panel = $('.panel');
+
+// Change 33% earlier than scroll position so colour is there when you arrive.
+var scroll = $window.scrollTop() + ($window.height() / 3);
+
+$panel.each(function () {
+  var $this = $(this);
+  
+  // if position is within range of this panel.
+  // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+  // Remember we set the scroll to 33% earlier in scroll var.
+  if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+      
+  // Remove all classes on body with color-
+  $body.removeClass(function (index, css) {
+      return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+  });
+  
+  // Add class of currently active div
+  $body.addClass('color-' + $(this).data('color'));
+  }
+});    
+
+}).scroll();
+</script>
+
+</html>

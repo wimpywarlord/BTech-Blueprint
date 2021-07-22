@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-167856909-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-167856909-2");
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A perfect reference timeline for your journey in VIT."
+    />
+    <meta
+      name="keywords"
+      content="VIT, VIT Vellore , vit college , kshitij , vinnovateit , wimpywarlord"
+    />
+    <meta name="author" content="VinnovateIT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="<%=title_logo%>" type="image/x-icon" />
+    <meta property="og:title" content="Ventor" />
+    <meta
+      property="og:description"
+      content="A perfect reference timeline for your journey in VIT."
+    />
+    <meta property="og:image" content="<%=title_logo%>" />
+    <title>Ventor</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: poppins, sans-serif;
+      }
+
+      header {
+        position: relative;
+        width: 100%;
+        min-height: 95vh;
+        background: rgb(40, 43, 46);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      header:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(76, 78, 80);
+        clip-path: polygon(71% 0, 100% 0, 100% 100%, 93% 100%);
+      }
+
+      .nav {
+        position: absolute;
+        top: 75px;
+        left: 50px;
+        display: flex;
+        border-left: 5px solid #000;
+        padding-left: 20px;
+      }
+
+      .nav li {
+        list-style: none;
+      }
+
+      .nav li a {
+        color: white;
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      .imgBox {
+        position: relative;
+        padding-right: 100px;
+        padding-top: 40px;
+      }
+
+      .imgBox img {
+        max-width: 300px;
+      }
+
+      .content {
+        position: relative;
+        padding: 100px 50px;
+        box-sizing: border-box;
+      }
+
+      .content h2 {
+        color: white;
+        font-size: 1.5em;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .content p {
+        color: white;
+        font-size: 1.1em;
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .buttons > button {
+        margin: 5px;
+      }
+
+      .buttons a {
+        position: relative;
+        display: inline-block;
+        background: #000;
+        padding: 15px 30px;
+        margin: 20px;
+        margin-left: 10px;
+        margin-right: 0;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.95em;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .social {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+      }
+
+      .social li {
+        list-style: none;
+      }
+
+      .social li a {
+        color: white;
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 0.9em;
+      }
+
+      .social li a:hover {
+        color: #fff;
+      }
+
+      @media only screen and (max-width: 500px) {
+        header:before {
+          clip-path: polygon(100% 50%, 100% 100%, 0% 100%);
+        }
+
+        .nav {
+          position: absolute;
+          top: 10px;
+          left: 0px;
+          width: 90%;
+          display: flex;
+          border-left: 5px solid #000;
+          padding-left: 7px;
+          margin: 10px;
+        }
+
+        .nav li {
+          margin-right: 10px;
+        }
+
+        .nav li a {
+          margin-right: 0px;
+        }
+
+        .imgBox {
+          display: none;
+        }
+
+        .content {
+          position: relative;
+          padding: 0;
+          box-sizing: border-box;
+          width: 90%;
+          margin: 20px;
+        }
+
+        .content h2 {
+          color: white;
+          font-size: 1.2rem;
+          font-weight: 800;
+          text-transform: uppercase;
+        }
+
+        .content p {
+          color: white;
+          font-size: 1em;
+        }
+
+        .buttons a {
+          position: relative;
+          display: inline-block;
+          background: #000;
+          padding: 10px;
+          margin-top: 20px;
+          margin-bottom: 0;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          font-size: 0.7em;
+          font-weight: 700;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+      }
+
+      .footer {
+        height: 5vh;
+        background-color: #17202a;
+        color: #fdfefe;
+      }
+
+      .center_col {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .center_col {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .new-popup {
+        display: inline-block;
+        position: relative;
+        bottom: 13px;
+        background-color: #fff;
+        color: rgb(14, 104, 179);
+        width: 35px;
+        padding: 3px;
+        font-size: 11px;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        font-size: 12px;
+        transition: opacity 0.3s;
+      }
+
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+        text-transform: initial;
+      }
+      .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        /*position the autocomplete items to be the same width as the container:*/
+        top: 100%;
+        left: 0;
+        right: 0;
+      }
+      .search {
+        display: flex;
+      }
+      @media only screen and (max-width: 600px) {
+        .search {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+      .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+      }
+
+      /*when hovering an item:*/
+      .autocomplete-items div:hover {
+        background-color: #e9e9e9;
+      }
+
+      /*when navigating through the items using the arrow keys:*/
+      .autocomplete-active {
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <ul class="nav" style="align-items: center; flex-wrap: wrap">
+        <li><a style="padding: 0.6rem" href="#">HOME</a></li>
+        <!-- <li>
+          <a
+            style="padding: 0.6rem"
+            target="_blank"
+            href="http://the-wall-e.herokuapp.com/"
+          >
+            <div class="tooltip inln">
+              WALLE
+              <div class="new-popup">New</div>
+              <span class="tooltiptext">More Projects by VinnovateIT</span>
+            </div>
+          </a>
+        </li> -->
+        <li>
+          <a
+            style="padding: 0.6rem"
+            target="_blank"
+            href="https://vinnovateit.com/#contact"
+            >CONTACT</a
+          >
+        </li>
+        <li>
+          <form class="search" action="/search" method="POST">
+            <div class="autocomplete">
+              <input
+                style="
+                  padding: 10px;
+                  border: none;
+                  border-radius: 5px;
+                  margin-right: 5px;
+                "
+                id="autoCourse"
+                type="text"
+                name="code"
+                placeholder="Search for a course"
+              />
+            </div>
+            <button
+              style="
+                padding: 10px;
+                border-radius: 5px;
+                background-color: rgb(114, 236, 114);
+                border: none;
+                cursor: pointer;
+              "
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </li>
+      </ul>
+
+      <div class="content">
+        <h2>VIT Mentor</h2>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          Confused about which subject to take next semester? Well not anymore ,
+          get delicately analysed semester-wise timeline and live life hassle
+          free.
+        </p>
+        <h4
+          style="
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          "
+        >
+          Know about the subjects before choosing, search in the textbox
+          provided above to get suggestions about the subject from your peers
+          and seniors
+        </h4>
+        <div class="buttons">
+          <a href="/it">IT</a>
+          <a href="/cse">CSE</a>
+          <a href="/ece">ECE</a>
+          <a href="/eee">EEE</a>
+          <a href="/civil">civil</a>
+          <a href="/mech">mech</a>
+        </div>
+      </div>
+      <div class="imgBox">
+        <img src="<%= title_logo %>" height="300px" width="285px" alt="" />
+      </div>
+      <ul class="social">
+        <li>
+          <div style="padding-right: 1rem">
+            <a target="_blank" href="https://www.facebook.com/VinnovateIT">
+              <div style="text-align: center">
+                <img height="20px" width="20px" src="<%=facebook%>" alt="" />
+              </div>
+              <div style="text-align: center">Facebook</div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div style="padding-left: 1rem; padding-right: 1rem">
+            <a target="_blank" href="https://github.com/vinnovateit">
+              <div style="text-align: center">
+                <img height="20px" width="20px" src="<%=github%>" alt="" />
+              </div>
+              <div style="text-align: center">Github</div>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div style="padding-left: 1rem">
+            <a target=" _blank" href=" https://www.instagram.com/vinnovateit/">
+              <div style="text-align: center">
+                <img height="20px" width="20px" src="<%=instagram%>" alt="" />
+              </div>
+              <div style="text-align: center">Instagram</div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div style="padding-left: 1rem; padding-right: 1rem">
+            <a
+              target="_blank"
+              href="https://chat.whatsapp.com/KA9u2aHbzIpJNHDEAdpSTk"
+            >
+              <div style="text-align: center">
+                <img height="20px" width="20px" src="<%= whatsapp %>" alt="" />
+              </div>
+              <div style="text-align: center">Whatsapp</div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="footer center_col">Made with 💕 by VinnovateIT</div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+      .card {
+        background-color: #222831;
+        height: auto;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 20px;
+        width: 250px;
+      }
+
+      .card__name {
+        margin-top: 15px;
+        font-size: 1.5em;
+        font-family: "Ranchers", cursive;
+        word-spacing: 5px;
+      }
+
+      .card__image {
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        border: 5px solid #272133;
+        margin-top: 20px;
+        box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+      }
+
+      .draw-border {
+        box-shadow: inset 0 0 0 4px #58cdd1;
+        color: #58afd1;
+        -webkit-transition: color 0.25s 0.0833333333s;
+        transition: color 0.25s 0.0833333333s;
+        position: relative;
+      }
+
+      .draw-border::before,
+      .draw-border::after {
+        border: 0 solid transparent;
+        box-sizing: border-box;
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        width: 0rem;
+        height: 0;
+        bottom: 0;
+        right: 0;
+      }
+
+      .draw-border::before {
+        border-bottom-width: 4px;
+        border-left-width: 4px;
+      }
+
+      .draw-border::after {
+        border-top-width: 4px;
+        border-right-width: 4px;
+      }
+
+      .draw-border:hover {
+        color: #ffe593;
+      }
+
+      .draw-border:hover::before,
+      .draw-border:hover::after {
+        border-color: #eb196e;
+        -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+        transition: border-color 0s, width 0.25s, height 0.25s;
+        width: 100%;
+        height: 100%;
+      }
+
+      .draw-border:hover::before {
+        -webkit-transition-delay: 0s, 0s, 0.25s;
+        transition-delay: 0s, 0s, 0.25s;
+      }
+
+      .draw-border:hover::after {
+        -webkit-transition-delay: 0s, 0.25s, 0s;
+        transition-delay: 0s, 0.25s, 0s;
+      }
+
+      .btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        line-height: 1.5;
+        font-family: "Ranchers", cursive;
+        padding: 0.75em;
+        letter-spacing: 0.05rem;
+        margin: 1em;
+        text-decoration: none;
+        text-align: center;
+        width: 13rem;
+      }
+
+      .btn:focus {
+        outline: 2px dotted #55d7dc;
+      }
+
+      .social-icons {
+        padding: 0;
+        list-style: none;
+        margin: 1em;
+      }
+
+      .social-icons li {
+        display: inline-block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1em;
+      }
+
+      .social-icons i {
+        color: #fff;
+        position: absolute;
+        top: 0.95em;
+        left: 0.96em;
+        transition: all 265ms ease-out;
+      }
+
+      .social-icons a {
+        display: inline-block;
+      }
+
+      .social-icons a:before {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        content: " ";
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        display: block;
+        background: linear-gradient(45deg, #ff003c, #c648c8);
+        transition: all 265ms ease-out;
+      }
+
+      .social-icons a:hover:before {
+        transform: scale(0);
+        transition: all 265ms ease-in;
+      }
+
+      .social-icons a:hover i {
+        transform: scale(2.2);
+        -ms-transform: scale(2.2);
+        -webkit-transform: scale(2.2);
+        color: #ff003c;
+        background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 265ms ease-in;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        font-size: 1.2em;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/695fbc93f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <div
+      style="
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+      id="social-popup"
+    >
+      <div class="card">
+        <p class="card__name">VinPrep  is  live</p>
+        <h4
+          style="
+            text-align: center;
+            font-family: Ranchers, cursive;
+            letter-spacing: 0.1rem;
+            font-weight: 200;
+          "
+        >
+          Get the full mock placement experience
+        </h4>
+            <a style="margin-bottom:10px;"target="_blank"  class="btn draw-border" href="https://vinprep.vinnovateit.com"
+              >Vinprep Portal</i
+            ></a>
+        <p
+          style="
+            text-align: center;
+            font-family: Ranchers, cursive;
+            letter-spacing: 0.1rem;
+            font-weight: 200;
+          "
+        >
+          Join Official Vinprep Discord Channel to stay updated
+        </p>
+        <a
+          target="_blank"
+          href="https://discord.com/invite/SWXgwjsmA"
+          class="btn draw-border"
+          >Join</a
+        >
+        <button onclick="closer()" class="btn draw-border">Close</button>
+      </div>
+    </div>
+  </body>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/5ee258969e5f69442290617f/default";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    var n = +localStorage.getItem("visit") || 0;
+    setTimeout(() => {
+      if (n % 5 == 0 || n == 1) {
+        document.getElementById("social-popup").style.display = "flex";
+      }
+    }, 500);
+    n = n + 1;
+    localStorage.setItem("visit", n);
+    function closer(e) {
+      document.getElementById("social-popup").style.display = "none";
+      console.log("closer");
+    }
+
+    function autocomplete(inp, arr) {
+      var currentFocus;
+      inp.addEventListener("input", function (e) {
+        var a,
+          b,
+          i,
+          val = this.value;
+        closeAllLists();
+        if (!val) {
+          return false;
+        }
+        currentFocus = -1;
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        this.parentNode.appendChild(a);
+
+        for (i = 0; i < arr.length; i++) {
+          if (arr[i].toUpperCase().includes(val.toUpperCase())) {
+            b = document.createElement("DIV");
+
+            b.innerHTML =
+              "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            b.innerHTML += arr[i].substr(val.length);
+
+            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
+            b.addEventListener("click", function (e) {
+              inp.value = this.getElementsByTagName("input")[0].value;
+
+              closeAllLists();
+            });
+            a.appendChild(b);
+          }
+        }
+      });
+
+      inp.addEventListener("keydown", function (e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+          currentFocus++;
+
+          addActive(x);
+        } else if (e.keyCode == 38) {
+          currentFocus--;
+          addActive(x);
+        } else if (e.keyCode == 13) {
+          e.preventDefault();
+          if (currentFocus > -1) {
+            if (x) x[currentFocus].click();
+          }
+        }
+      });
+      function addActive(x) {
+        if (!x) return false;
+
+        removeActive(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = x.length - 1;
+
+        x[currentFocus].classList.add("autocomplete-active");
+      }
+      function removeActive(x) {
+        for (var i = 0; i < x.length; i++) {
+          x[i].classList.remove("autocomplete-active");
+        }
+      }
+      function closeAllLists(elmnt) {
+        var x = document.getElementsByClassName("autocomplete-items");
+        for (var i = 0; i < x.length; i++) {
+          if (elmnt != x[i] && elmnt != inp) {
+            x[i].parentNode.removeChild(x[i]);
+          }
+        }
+      }
+
+      document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+      });
+    }
+
+    var courses = [];
+
+    axios
+      .get("/subjectrequest2")
+      .then((data) => {
+        for (let i = 0; i < data.data.length; i++) {
+          courses.push(data.data[i].code + " " + data.data[i].title);
+        }
+      })
+      .catch((err) => console.log(err));
+
+    console.log(courses);
+    autocomplete(document.getElementById("autoCourse"), courses);
+  </script>
+  <!--End of Tawk.to Script-->
+</html>

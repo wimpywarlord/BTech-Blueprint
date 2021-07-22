@@ -1,0 +1,932 @@
+ [
+        {
+            "code": "CSE1007",
+            "title": "Java Programming",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "EEE1001",
+            "title": "Basic Electrical and Electronics Engineering",
+            "type": "Embedded Theory and Lab",
+            "credits": "3"
+        },
+        {
+            "code": "ITE1001",
+            "title": "Digital Logic and Microprocessor",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1002",
+            "title": "Web Technologies",
+            "type": "Embedded Theory and Lab",
+            "credits": "3"
+        },
+        {
+            "code": "ITE1003",
+            "title": "Database Management Systems",
+            "type": "Embedded Theory, Lab and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1004",
+            "title": "Data Structures and Algorithms",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1005",
+            "title": "Software Engineering-Principles and Practices",
+            "type": "Theory Only",
+            "credits": "3"
+        },
+        {
+            "code": "ITE1006",
+            "title": "Theory of Computation",
+            "type": "Theory Only",
+            "credits": "3"
+        },
+        {
+            "code": "ITE2001",
+            "title": "Computer Architecture and Organization",
+            "type": "Theory Only",
+            "credits": "3"
+        },
+        {
+            "code": "ITE2002",
+            "title": "Operating Systems",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "ITE3001",
+            "title": "Data Communication and Computer Networks",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "ITE4001",
+            "title": "Network and Information Security",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "MAT1014",
+            "title": "Discrete Mathematics and Graph Theory",
+            "type": "Theory Only",
+            "credits": "4"
+        },
+        {
+            "code": "MAT2002",
+            "title": "Applications of Differential and Difference Equations",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "MAT3004",
+            "title": "Applied Linear Algebra",
+            "type": "Theory Only",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1007",
+            "title": "Object Oriented Analysis and Design",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1008",
+            "title": "Open Source programming",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1010",
+            "title": "Digital Image Processing",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1011",
+            "title": "Computer Graphics",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1014",
+            "title": "Human Computer Interaction",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1015",
+            "title": "Soft Computing",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1016",
+            "title": "Mobile Application Development",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE1017",
+            "title": "Transformation Techniques",
+            "type": "Theory Only",
+            "credits": "3"
+        },
+        {
+            "code": "ITE2003",
+            "title": "Principles and Practices of Communication System",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE2004",
+            "title": "Software Testing",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE2005",
+            "title": "Advanced Java Programming",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "ITE2006",
+            "title": "Data Mining Techniques",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE2009",
+            "title": "Storage Technologies",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE2010",
+            "title": "Artificial Intelligence",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE2011",
+            "title": "Machine Learning",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE2012",
+            "title": ".Net Programming",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "ITE2013",
+            "title": "Big Data Analytics",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE2014",
+            "title": "Software Project Management",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "ITE2015",
+            "title": "Information System Audit",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "ITE3002",
+            "title": "Embedded Systems",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "ITE3003",
+            "title": "Parallel Processing",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE3004",
+            "title": "Distributed Systems",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE3005",
+            "title": "Information Coding Theory",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE3007",
+            "title": "Cloud Computing and Virtualization",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE3008",
+            "title": "Information Retrieval",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE4002",
+            "title": "Network Management Systems",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE4003",
+            "title": "Internet of Things",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE4004",
+            "title": "Wireless Mobile Networking",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "ITE4010",
+            "title": "Network Programming, Protocols and Standards",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "CHY1701",
+            "title": "Engineering Chemistry",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "CSE1001",
+            "title": "Problem Solving and Programming",
+            "type": "Lab Only",
+            "credits": "3"
+        },
+        {
+            "code": "CSE1002",
+            "title": "Problem Solving and Object Oriented Programming",
+            "type": "Lab Only",
+            "credits": "3"
+        },
+        {
+            "code": "ENG1901",
+            "title": "Technical English - I",
+            "type": "Lab Only",
+            "credits": "2"
+        },
+        {
+            "code": "ENG1902",
+            "title": "Technical English - II",
+            "type": "Lab Only",
+            "credits": "2"
+        },
+        {
+            "code": "ENG1903",
+            "title": "Advanced Technical English",
+            "type": "Embedded Lab and Project",
+            "credits": "2"
+        },
+        {
+            "code": "ESP1001",
+            "title": "ESPANOL FUNDAMENTAL",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "ESP2001",
+            "title": "ESPANOL INTERMEDIO",
+            "type": "Embedded Theory and Lab",
+            "credits": "3"
+        },
+        {
+            "code": "FRE1001",
+            "title": "Francais quotidien",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "FRE2001",
+            "title": "Francais progressif",
+            "type": "Embedded Theory and Lab",
+            "credits": "3"
+        },
+        {
+            "code": "GER1001",
+            "title": "Grundstufe Deutsch",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "GER2001",
+            "title": "Mittelstufe Deutsch",
+            "type": "Embedded Theory and Lab",
+            "credits": "3"
+        },
+        {
+            "code": "GRE1001",
+            "title": "Modern Greek",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "HUM1021",
+            "title": "Ethics and Values",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "ITE1901",
+            "title": "Technical Answers for Real World Problems (TARP)",
+            "type": "Embedded Theory and Project",
+            "credits": "2"
+        },
+        {
+            "code": "ITE1902",
+            "title": "Industrial Internship",
+            "type": "Project",
+            "credits": "1"
+        },
+        {
+            "code": "ITE1903",
+            "title": "Comprehensive Examination",
+            "type": "Project",
+            "credits": "1"
+        },
+        {
+            "code": "ITE1904",
+            "title": "Capstone Project",
+            "type": "Project",
+            "credits": "12"
+        },
+        {
+            "code": "JAP1001",
+            "title": "Japanese for Beginners",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "MAT1011",
+            "title": "Calculus for Engineers",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "MAT2001",
+            "title": "Statistics for Engineers",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "MGT1022",
+            "title": "Lean Start-up Management",
+            "type": "Embedded Theory and Project",
+            "credits": "2"
+        },
+        {
+            "code": "PHY1701",
+            "title": "Engineering Physics",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "PHY1901",
+            "title": "Introduction to Innovative Projects",
+            "type": "Theory Only",
+            "credits": "1"
+        },
+        {
+            "code": "RUS1001",
+            "title": "Russian for Beginners",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "STS1001",
+            "title": "Introduction to Soft Skills",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS1002",
+            "title": "Introduction to Business Communication",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS1101",
+            "title": "Fundamentals of Aptitude",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS1102",
+            "title": "Arithmetic Problem Solving",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS1201",
+            "title": "Introduction to Problem Solving",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS1202",
+            "title": "Introduction to Quantitative, Logical and Verbal Ability",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS2001",
+            "title": "Reasoning Skill Enhancement",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS2002",
+            "title": "Introduction to Etiquette",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS2101",
+            "title": "Getting Started to Skill Enhancement",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS2102",
+            "title": "Enhancing Problem Solving Skills",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS2201",
+            "title": "Numerical Ability and Cognitive Intelligence",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS2202",
+            "title": "Advanced Aptitude and Reasoning Skills",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3001",
+            "title": "Preparedness for External Opportunities",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3004",
+            "title": "Data Structures and Algorithms",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3005",
+            "title": "Code Mithra",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3006",
+            "title": "Preparedness for External Opportunities",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3007",
+            "title": "Preparedness for Career Opportunities",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3101",
+            "title": "Introduction to Programming Skills",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3104",
+            "title": "Enhancing Programming Ability",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3105",
+            "title": "Computational Thinking",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3201",
+            "title": "Programming Skills for Employment",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3204",
+            "title": "JAVA Programming and Software Engineering Fundamentals",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3205",
+            "title": "Advanced JAVA Programming",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3301",
+            "title": "JAVA for Beginners",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS3401",
+            "title": "Foundation to Programming Skills",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "STS5002",
+            "title": "Preparing for Industry",
+            "type": "Soft Skill",
+            "credits": "1"
+        },
+        {
+            "code": "BCI2001",
+            "title": "Data Privacy",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BCI2002",
+            "title": "Image Processing",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BCI3001",
+            "title": "Web Security",
+            "type": "Embedded Theory, Lab and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BCI3002",
+            "title": "Disaster Recovery and Business Continuity Management",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BCI3003",
+            "title": "Android Security",
+            "type": "Embedded Theory, Lab and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BCI3004",
+            "title": "Security of E-Based Systems",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BCI3005",
+            "title": "Digital Watermarking and Steganography",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BCI3006",
+            "title": "Biometrics",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BCI4001",
+            "title": "Cyber Forensics and Investigation",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "BCI4002",
+            "title": "Vulnerability Analysis and Penetration Testing",
+            "type": "Embedded Theory, Lab and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BCI4003",
+            "title": "Malware Analysis",
+            "type": "Embedded Theory, Lab and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1001",
+            "title": "Introduction to Life Sciences",
+            "type": "Theory Only",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1002",
+            "title": "Biostatistics",
+            "type": "Theory Only",
+            "credits": "3"
+        },
+        {
+            "code": "BIT1003",
+            "title": "Biology for Engineers",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1004",
+            "title": "Cell Biology and Biochemistry",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1005",
+            "title": "Biochemistry",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1006",
+            "title": "Cell Biology and Genetics",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1007",
+            "title": "Microbiology",
+            "type": "Embedded Theory, Lab and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1008",
+            "title": "Principles of Chemical Engineering",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1009",
+            "title": "Biobusiness",
+            "type": "Embedded Theory and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1010",
+            "title": "Computational Biochemistry",
+            "type": "Embedded Theory and Project",
+            "credits": "3"
+        },
+        {
+            "code": "BIT1011",
+            "title": "Social Entrepreneurship",
+            "type": "Embedded Theory and Project",
+            "credits": "3"
+        },
+        {
+            "code": "BIT1012",
+            "title": "Human Anatomy and Physiology",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1013",
+            "title": "Semiconductor Devices and Circuits",
+            "type": "Embedded Theory, Lab and Project",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1014",
+            "title": "Biomaterials",
+            "type": "Embedded Theory and Project",
+            "credits": "3"
+        },
+        {
+            "code": "BIT1016",
+            "title": "Biochemical Analysis and Techniques",
+            "type": "Embedded Theory and Lab",
+            "credits": "4"
+        },
+        {
+            "code": "BIT1018",
+            "title": "Medical Optics",
+            "type": "Theory Only",
+            "credits": "3"
+        },
+        {
+            "code": "BIT1023",
+            "title": "Health Technology Management",
+            "type": "Theory Only",
+            "credits": "3"
+        },
+        {
+            "code": "BIT1024",
+            "title": "Database Management for Healthcare",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "BIT1025",
+            "title": "Hospital Management",
+            "type": "Theory Only",
+            "credits": "2"
+        },
+        {
+            "code": "CHY1002",
+            "title": "Environmental Sciences",
+            "type": "Theory Only",
+            "credits": "3"
+        },
+        {
+            "code": "ENG1000",
+            "title": "Foundation English - I",
+            "type": "Lab Only",
+            "credits": "2"
+        },
+        {
+            "code": "ENG2000",
+            "title": "Foundation English - II",
+            "type": "Lab Only",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1001",
+            "title": "Service to the Society",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1002",
+            "title": "Youth Red Cross",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1002",
+            "title": "Red Cross",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1003",
+            "title": "ABCD-AnyBody Can Dance",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1004",
+            "title": "Entrepreneurs Cell",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1004",
+            "title": "Building Entrepreneurship Competencies and Skills",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1005",
+            "title": "Energy and Environmental Protection Club",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1006",
+            "title": "Music - The Art of Culture",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1007",
+            "title": "Sports for Healthy Life",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1008",
+            "title": "Instrumentation for Engineers",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1009",
+            "title": "Debating Skills",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1010",
+            "title": "Mobility Engineering- Land, Air and Sea",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1011",
+            "title": "Skills in Competitive Coding",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1012",
+            "title": "Basics of Space Sciences",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1013",
+            "title": "Roadmap to a Connected World",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1014",
+            "title": "Dramatics Club",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1014",
+            "title": "The Art of Acting",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1016",
+            "title": "ASCE - VIT Student Chapter",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1017",
+            "title": "Health Club",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1017",
+            "title": "Health and Wellness",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1018",
+            "title": "IETE - Student Chapter",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1018",
+            "title": "Electronics and Telecommunication for Skill Development",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1019",
+            "title": "The Fine Arts Club",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1019",
+            "title": "Basic Art and Craft Techniques",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1020",
+            "title": "Skills on Creativity",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1021",
+            "title": "Computer Society of India",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        },
+        {
+            "code": "EXC1021",
+            "title": "Computer in Society",
+            "type": "Extra Curricular Activity",
+            "credits": "2"
+        }
+    ]
