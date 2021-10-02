@@ -11,24 +11,7 @@
 
     gtag('config', 'UA-167856909-2');
   </script>
-
-  <script>
-    //For Go to top button
-    var mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-  </script>
-
-
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -370,8 +353,8 @@
     #myBtn {
       display: none;
       position: fixed;
-      bottom: 40px;
-      right: 30px;
+      bottom: 25px;
+      right: 75px;
       z-index: 99;
       height: 50px;
     }
@@ -805,6 +788,23 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
+  
+<script>
+    //For Go to top button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+</script>
+
 <script>
   var scroll = window.requestAnimationFrame;
   var left = document.querySelectorAll(".timeline-left .timeline-panel");
